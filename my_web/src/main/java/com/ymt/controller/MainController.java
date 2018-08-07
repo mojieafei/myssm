@@ -8,6 +8,6 @@ public class MainController {
 	
 	@RequestMapping("/")
 	public String start() {
-		return "This is a Spring Boor project! It's wok";
+		return "This is a Spring Boor project! It's work";
 	}
 }
