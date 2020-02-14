@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="MysqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <!--&lt;!&ndash; 这两个字段用来支持TDDL数据源 &ndash;&gt;-->
+        <!--<property name="tddl" value="true"/>-->
+        <!--<property name="tddl.sharding" value="false"/>-->
+
+        <commentGenerator type="CommentGenerator">
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/local?useUnicode=true" userId="root" password="rootroot"/>
+        <!--<jdbcConnection driverClass="XRAPTOR_GROUP" connectionURL="XRAPTOR_APP"/>-->
+
+        <javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl">
+            <property name="forceBigDecimals" value="${javaType.forceBigDecimals}"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="" targetProject="">
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="" targetProject=""/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="" targetProject=""/>
+
+        <table tableName="%"></table>
+    </context>
+</generatorConfiguration>

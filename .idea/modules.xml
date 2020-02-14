@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/my_dao/my_dao.iml" filepath="$PROJECT_DIR$/my_dao/my_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_service/my_service.iml" filepath="$PROJECT_DIR$/my_service/my_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my_web/my_web.iml" filepath="$PROJECT_DIR$/my_web/my_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myssm.iml" filepath="$PROJECT_DIR$/.idea/myssm.iml" />
+    </modules>
+  </component>
+</project>
